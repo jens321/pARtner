@@ -29,7 +29,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func add(_ sender: Any) {
-        let jellyFishScene = SCNScene(named: "art.scnassets/Jellyfish.scn")
+        let jellyFishScene = SCNScene(named: "art.scnassets/Jellyfish.dae")
         let jellyfishNode = jellyFishScene?.rootNode.childNode(withName: "Jellyfish", recursively: false)
         jellyfishNode?.position = SCNVector3(0, 0, -1)
         self.sceneView.scene.rootNode.addChildNode(jellyfishNode!)
