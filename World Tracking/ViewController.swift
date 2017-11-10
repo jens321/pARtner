@@ -29,21 +29,21 @@ class ViewController: UIViewController {
     }
 
     @IBAction func add(_ sender: Any) {
-//        let jellyFishScene = SCNScene(named: "art.scnassets/Jellyfish.scn")
-//        let jellyfishNode = jellyFishScene?.rootNode.childNode(withName: "Jellyfish", recursively: false)
-//        jellyfishNode?.position = SCNVector3(0, 0, -1)
-//        self.sceneView.scene.rootNode.addChildNode(jellyfishNode!)
+        let jellyFishScene = SCNScene(named: "art.scnassets/Jellyfish.scn")
+        let jellyfishNode = jellyFishScene?.rootNode.childNode(withName: "Jellyfish", recursively: false)
+        jellyfishNode?.position = SCNVector3(0, 0, -1)
+        self.sceneView.scene.rootNode.addChildNode(jellyfishNode!)
         
-        let node = SCNNode()
-        node.geometry = SCNBox(width: 0.1, height: 0.1, length: 0.1, chamferRadius: 0.03)
-        node.geometry?.firstMaterial?.specular.contents = UIColor.white
-        node.geometry?.firstMaterial?.diffuse.contents = UIColor.blue
-        let x = randomNumbers(firstNum: -0.3, secondNum: 0.3)
-        let y = randomNumbers(firstNum: -0.3, secondNum: 0.3)
-        let z = randomNumbers(firstNum: -0.3, secondNum: 0.3)
-        node.position = SCNVector3(x, y, z)
-        // rootnode is positioned exaclty where starting position is
-        self.sceneView.scene.rootNode.addChildNode(node)
+//        let node = SCNNode()
+//        node.geometry = SCNBox(width: 0.1, height: 0.1, length: 0.1, chamferRadius: 0.03)
+//        node.geometry?.firstMaterial?.specular.contents = UIColor.white
+//        node.geometry?.firstMaterial?.diffuse.contents = UIColor.blue
+//        let x = randomNumbers(firstNum: -0.3, secondNum: 0.3)
+//        let y = randomNumbers(firstNum: -0.3, secondNum: 0.3)
+//        let z = randomNumbers(firstNum: -0.3, secondNum: 0.3)
+//        node.position = SCNVector3(x, y, z)
+//        // rootnode is positioned exaclty where starting position is
+//        self.sceneView.scene.rootNode.addChildNode(node)
     }
     
     @IBAction func reset(_ sender: Any) {

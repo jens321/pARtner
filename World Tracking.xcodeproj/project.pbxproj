@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B4046A311FB5604800C0217B /* Textures in Resources */ = {isa = PBXBuildFile; fileRef = B4046A301FB5604800C0217B /* Textures */; };
+		B4046A341FB560AF00C0217B /* art.scnassets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4046A331FB560AF00C0217B /* art.scnassets.xcassets */; };
 		B41EBB8A1FB52893002FD02B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41EBB891FB52893002FD02B /* AppDelegate.swift */; };
 		B41EBB8C1FB52893002FD02B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41EBB8B1FB52893002FD02B /* ViewController.swift */; };
 		B41EBB8F1FB52893002FD02B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B41EBB8D1FB52893002FD02B /* Main.storyboard */; };
@@ -15,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B4046A301FB5604800C0217B /* Textures */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Textures; sourceTree = "<group>"; };
+		B4046A321FB5606F00C0217B /* Jellyfish.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = Jellyfish.scn; sourceTree = "<group>"; };
+		B4046A331FB560AF00C0217B /* art.scnassets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = art.scnassets.xcassets; sourceTree = "<group>"; };
 		B41EBB861FB52893002FD02B /* World Tracking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "World Tracking.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B41EBB891FB52893002FD02B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B41EBB8B1FB52893002FD02B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,12 +59,15 @@
 		B41EBB881FB52893002FD02B /* World Tracking */ = {
 			isa = PBXGroup;
 			children = (
+				B4046A321FB5606F00C0217B /* Jellyfish.scn */,
+				B4046A301FB5604800C0217B /* Textures */,
 				B41EBB891FB52893002FD02B /* AppDelegate.swift */,
 				B41EBB8B1FB52893002FD02B /* ViewController.swift */,
 				B41EBB8D1FB52893002FD02B /* Main.storyboard */,
 				B41EBB901FB52893002FD02B /* Assets.xcassets */,
 				B41EBB921FB52893002FD02B /* LaunchScreen.storyboard */,
 				B41EBB951FB52893002FD02B /* Info.plist */,
+				B4046A331FB560AF00C0217B /* art.scnassets.xcassets */,
 			);
 			path = "World Tracking";
 			sourceTree = "<group>";
@@ -125,6 +133,8 @@
 			files = (
 				B41EBB941FB52893002FD02B /* LaunchScreen.storyboard in Resources */,
 				B41EBB911FB52893002FD02B /* Assets.xcassets in Resources */,
+				B4046A311FB5604800C0217B /* Textures in Resources */,
+				B4046A341FB560AF00C0217B /* art.scnassets.xcassets in Resources */,
 				B41EBB8F1FB52893002FD02B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
