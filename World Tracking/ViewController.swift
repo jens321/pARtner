@@ -11,9 +11,7 @@ import ARKit
 
 class ViewController: UIViewController {
     @IBOutlet weak var sceneView: ARSCNView!
-    
     let configuration = ARWorldTrackingConfiguration()
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -34,16 +32,7 @@ class ViewController: UIViewController {
         jellyfishNode?.position = SCNVector3(0, 0, -1)
         self.sceneView.scene.rootNode.addChildNode(jellyfishNode!)
         
-//        let node = SCNNode()
-//        node.geometry = SCNBox(width: 0.1, height: 0.1, length: 0.1, chamferRadius: 0.03)
-//        node.geometry?.firstMaterial?.specular.contents = UIColor.white
-//        node.geometry?.firstMaterial?.diffuse.contents = UIColor.blue
-//        let x = randomNumbers(firstNum: -0.3, secondNum: 0.3)
-//        let y = randomNumbers(firstNum: -0.3, secondNum: 0.3)
-//        let z = randomNumbers(firstNum: -0.3, secondNum: 0.3)
-//        node.position = SCNVector3(x, y, z)
-//        // rootnode is positioned exaclty where starting position is
-//        self.sceneView.scene.rootNode.addChildNode(node)
+        
     }
     
     @IBAction func reset(_ sender: Any) {
@@ -61,6 +50,10 @@ class ViewController: UIViewController {
     func randomNumbers(firstNum: CGFloat, secondNum: CGFloat) -> CGFloat{
         return CGFloat(arc4random()) / CGFloat(UINT32_MAX) * abs(firstNum - secondNum) + min(firstNum, secondNum)
     }
+}
+
+extension Int {
+    var degreesToRadians: Double { return Double(self) * .pi/180 }
 }
 
 // 3 menu buttons: shop, pet, settings
