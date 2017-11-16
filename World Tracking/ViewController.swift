@@ -50,6 +50,9 @@ class ViewController: UIViewController {
     func randomNumbers(firstNum: CGFloat, secondNum: CGFloat) -> CGFloat{
         return CGFloat(arc4random()) / CGFloat(UINT32_MAX) * abs(firstNum - secondNum) + min(firstNum, secondNum)
     }
+    @IBAction func login(_ sender: UIButton) {
+        // do stuff 
+    }
 }
 
 extension Int {
