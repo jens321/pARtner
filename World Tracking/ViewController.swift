@@ -9,11 +9,12 @@
 import UIKit
 import ARKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController{
     @IBOutlet weak var sceneView: ARSCNView!
     let configuration = ARWorldTrackingConfiguration()
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         
         self.sceneView.debugOptions = [ARSCNDebugOptions.showFeaturePoints, ARSCNDebugOptions.showWorldOrigin]
         self.sceneView.session.run(configuration)
@@ -25,14 +26,12 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
     @IBAction func add(_ sender: Any) {
         let jellyFishScene = SCNScene(named: "art.scnassets/Jellyfish.dae")
         let jellyfishNode = jellyFishScene?.rootNode.childNode(withName: "Jellyfish", recursively: false)
         jellyfishNode?.position = SCNVector3(0, 0, -1)
         self.sceneView.scene.rootNode.addChildNode(jellyfishNode!)
-        
-        
     }
     
     @IBAction func reset(_ sender: Any) {
@@ -53,6 +52,9 @@ class ViewController: UIViewController {
     @IBAction func login(_ sender: UIButton) {
         // do stuff 
     }
+    
+ 
+    
 }
 
 extension Int {
