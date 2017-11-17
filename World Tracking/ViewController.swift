@@ -12,12 +12,14 @@ import ARKit
 class ViewController: UIViewController, ARSCNViewDelegate {
     @IBOutlet weak var sceneView: ARSCNView!
     let configuration = ARWorldTrackingConfiguration()
+    var petExists = false
     override func viewDidLoad() {
         super.viewDidLoad()
         self.sceneView.debugOptions = [ARSCNDebugOptions.showFeaturePoints, ARSCNDebugOptions.showWorldOrigin]
         self.configuration.planeDetection = .horizontal
         self.sceneView.session.run(configuration)
         self.sceneView.delegate = self
+        self.sceneView.autoenablesDefaultLighting = true
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -27,10 +29,10 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     }
     
     @IBAction func add(_ sender: Any) {
-        let jellyFishScene = SCNScene(named: "art.scnassets/Panda.scn")
-        let jellyfishNode = jellyFishScene?.rootNode.childNode(withName: "Panda", recursively: false)
-        jellyfishNode?.position = SCNVector3(0, 0, -1)
-        self.sceneView.scene.rootNode.addChildNode(jellyfishNode!)
+        petExists = false
+        self.sceneView.scene.rootNode.enumerateChildNodes {(node, _) in
+            node.removeFromParentNode()
+        }
     }
     
     @IBAction func reset(_ sender: Any) {
@@ -50,8 +52,14 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     }
 
     func renderer(_ renderer: SCNSceneRenderer, didAdd node: SCNNode, for anchor: ARAnchor) {
-        guard let planeAnchor = anchor as? ARPlaneAnchor else {return}
-        print("new flat surface detected")
+        if (!petExists) {
+            guard let planeAnchor = anchor as? ARPlaneAnchor else {return}
+            let jellyFishScene = SCNScene(named: "art.scnassets/Panda.scn")
+            let jellyfishNode = jellyFishScene?.rootNode.childNode(withName: "Panda", recursively: false)
+            jellyfishNode?.position = SCNVector3(planeAnchor.center.x, planeAnchor.center.y, planeAnchor.center.z)
+            node.addChildNode(jellyfishNode!)
+            petExists = true
+        }
     }
     
     
