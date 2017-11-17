@@ -205,21 +205,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Modules" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iDu-x9-RCJ">
-                                <rect key="frame" x="166" y="100" width="42" height="25.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Spn-zl-LGX">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="W9A-Dq-b8N" firstAttribute="trailing" secondItem="iDu-x9-RCJ" secondAttribute="trailing" constant="167" id="62o-uO-zdp"/>
-                            <constraint firstItem="iDu-x9-RCJ" firstAttribute="top" secondItem="W9A-Dq-b8N" secondAttribute="top" constant="36" id="F8c-kr-SkB"/>
-                            <constraint firstItem="iDu-x9-RCJ" firstAttribute="leading" secondItem="W9A-Dq-b8N" secondAttribute="leading" constant="166" id="Hfv-nN-2dS"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="W9A-Dq-b8N"/>
                     </view>
+                    <connections>
+                        <outlet property="modulesWebView" destination="Spn-zl-LGX" id="z4i-QK-0bB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sI6-Ws-z7m" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

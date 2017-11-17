@@ -7,13 +7,19 @@
 //
 
 import UIKit
+import WebKit
 
 class modulesViewController: UIViewController {
 
+    @IBOutlet weak var modulesWebView: WKWebView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        let url = URL(string: "https://partnr-backend.herokuapp.com")
+        modulesWebView.load(URLRequest(url: url!))
     }
 
     override func didReceiveMemoryWarning() {
