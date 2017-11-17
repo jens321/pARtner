@@ -4,8 +4,8 @@
   <contributor>
    <authoring_tool>SceneKit Collada Exporter v1.0</authoring_tool>
   </contributor>
-  <created>2017-11-10T04:50:25Z</created>
-  <modified>2017-11-10T04:50:25Z</modified>
+  <created>2017-11-17T01:19:24Z</created>
+  <modified>2017-11-17T01:19:24Z</modified>
   <unit meter="1.000000"/>
   <up_axis>Z_UP</up_axis>
  </asset>
@@ -115,7 +115,7 @@
  <library_visual_scenes>
   <visual_scene id="scene8">
    <node id="Sphere" name="Jellyfish">
-    <matrix>1 0 -0 0 0 5.960464e-08 0.9999999 0 0 -0.9999999 5.960464e-08 0 0 0 0 1 </matrix>
+    <matrix>1 0 0 0 0 5.960464e-08 0.9999999 0 0 -0.9999999 5.960464e-08 0 0 0 0 1 </matrix>
     <instance_geometry url="#geometry3">
      <bind_material>
       <technique_common>

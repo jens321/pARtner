@@ -19,17 +19,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pXC-6f-4vM">
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pXC-6f-4vM">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </arscnView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="reK-4Z-sMf">
-                                <rect key="frame" x="275" y="567" width="80" height="80"/>
+                                <rect key="frame" x="177" y="567" width="80" height="80"/>
                                 <color key="backgroundColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="c1u-nw-KAY"/>
                                     <constraint firstAttribute="width" constant="80" id="odZ-MO-xVM"/>
                                 </constraints>
-                                <state key="normal" title="Reset">
+                                <state key="normal" title="Modules">
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
@@ -49,14 +49,28 @@
                                     <action selector="add:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NGV-Yp-hA9"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SUu-Pq-oAs">
+                                <rect key="frame" x="120" y="567" width="37" height="80"/>
+                                <color key="backgroundColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="bBx-xD-YVC"/>
+                                    <constraint firstAttribute="width" constant="80" id="bhC-WX-BUO"/>
+                                </constraints>
+                                <state key="normal" title="Store">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="pXC-6f-4vM" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="0eW-Vw-7XP"/>
                             <constraint firstItem="pXC-6f-4vM" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="1Rs-Md-vnn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="SUu-Pq-oAs" secondAttribute="bottom" constant="20" id="24s-rZ-gOx"/>
                             <constraint firstItem="pXC-6f-4vM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="8Wo-6T-82D"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="reK-4Z-sMf" secondAttribute="trailing" constant="20" id="Fvc-yU-Szd"/>
+                            <constraint firstItem="reK-4Z-sMf" firstAttribute="leading" secondItem="SUu-Pq-oAs" secondAttribute="trailing" constant="20" id="NRj-og-ZMG"/>
                             <constraint firstItem="pXC-6f-4vM" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="bLw-JE-QrE"/>
+                            <constraint firstItem="SUu-Pq-oAs" firstAttribute="leading" secondItem="ODx-gB-hah" secondAttribute="trailing" constant="20" id="dY2-Dt-mqD"/>
                             <constraint firstItem="ODx-gB-hah" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="h9H-7G-sg6"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ODx-gB-hah" secondAttribute="bottom" constant="20" id="pvz-4F-MNx"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="reK-4Z-sMf" secondAttribute="bottom" constant="20" id="rpq-zm-Z8c"/>
@@ -69,12 +83,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="890" y="-171"/>
+            <point key="canvasLocation" x="888.79999999999995" y="-171.36431784107947"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="lkB-7m-3PY">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Wdz-fs-o4y" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="tzk-zf-pzV" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="bmL-LT-9rc">
@@ -86,14 +99,13 @@
                         <segue destination="ooD-Ei-m8N" kind="relationship" relationship="rootViewController" id="exh-ub-K60"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wdz-fs-o4y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="96" y="32.383808095952027"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="IYL-KU-8m6">
             <objects>
-                <exit id="NOP-tL-dJP" userLabel="Exit" sceneMemberID="exit"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ggz-mr-gwG" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="ooD-Ei-m8N" customClass="loginViewController" customModule="World_Tracking" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Vqc-qS-m0S">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -120,7 +132,7 @@
                                 <rect key="frame" x="30" y="341" width="239" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
+                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" secureTextEntry="YES" textContentType="password"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5AG-OK-Dx0">
                                 <rect key="frame" x="30" y="299" width="239" height="21"/>
@@ -177,6 +189,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="Jpd-66-pUb"/>
                 </viewController>
+                <exit id="NOP-tL-dJP" userLabel="Exit" sceneMemberID="exit"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ggz-mr-gwG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="889" y="611"/>
         </scene>
