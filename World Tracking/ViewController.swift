@@ -9,6 +9,8 @@
 import UIKit
 import ARKit
 
+var petColor = UIColor.green
+
 class ViewController: UIViewController, ARSCNViewDelegate {
     @IBOutlet weak var sceneView: ARSCNView!
     let configuration = ARWorldTrackingConfiguration()
@@ -34,11 +36,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
             node.removeFromParentNode()
         }
     }
-    
-    @IBAction func reset(_ sender: Any) {
-        self.restartSession()
-    }
-    
+  
     func restartSession() {
         self.sceneView.session.pause()
         self.sceneView.scene.rootNode.enumerateChildNodes {(node, _) in
@@ -57,14 +55,16 @@ class ViewController: UIViewController, ARSCNViewDelegate {
             let jellyFishScene = SCNScene(named: "art.scnassets/Panda.scn")
             let jellyfishNode = jellyFishScene?.rootNode.childNode(withName: "Panda", recursively: false)
             jellyfishNode?.position = SCNVector3(planeAnchor.center.x, planeAnchor.center.y, planeAnchor.center.z)
+            jellyfishNode?.geometry?.firstMaterial?.diffuse.contents = petColor
             node.addChildNode(jellyfishNode!)
             petExists = true
         }
     }
     
-    
-    
- 
+    func changePetColor() {
+        petColor = UIColor.blue
+        self.restartSession()
+    }
     
 }
 

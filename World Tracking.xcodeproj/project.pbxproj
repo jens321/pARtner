@@ -15,6 +15,7 @@
 		B41EBB941FB52893002FD02B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B41EBB921FB52893002FD02B /* LaunchScreen.storyboard */; };
 		B476BECF1FBE633D00A0B0D4 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = B476BECE1FBE633D00A0B0D4 /* Package.swift */; };
 		B49C3AB81FBD56010072D003 /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49C3AB71FBD56010072D003 /* loginViewController.swift */; };
+		B4A62D421FBEBF9C009664E9 /* storeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A62D411FBEBF9C009664E9 /* storeViewController.swift */; };
 		B4DCCB2E1FB563F700C23EF9 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = B4DCCB2D1FB563F700C23EF9 /* art.scnassets */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +30,7 @@
 		B41EBB951FB52893002FD02B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B476BECE1FBE633D00A0B0D4 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		B49C3AB71FBD56010072D003 /* loginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginViewController.swift; sourceTree = "<group>"; };
+		B4A62D411FBEBF9C009664E9 /* storeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = storeViewController.swift; sourceTree = "<group>"; };
 		B4DCCB2D1FB563F700C23EF9 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -68,6 +70,7 @@
 				B41EBB8B1FB52893002FD02B /* ViewController.swift */,
 				B476BECE1FBE633D00A0B0D4 /* Package.swift */,
 				B41EBB8D1FB52893002FD02B /* Main.storyboard */,
+				B4A62D411FBEBF9C009664E9 /* storeViewController.swift */,
 				B41EBB901FB52893002FD02B /* Assets.xcassets */,
 				B41EBB921FB52893002FD02B /* LaunchScreen.storyboard */,
 				B41EBB951FB52893002FD02B /* Info.plist */,
@@ -151,6 +154,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B476BECF1FBE633D00A0B0D4 /* Package.swift in Sources */,
+				B4A62D421FBEBF9C009664E9 /* storeViewController.swift in Sources */,
 				B41EBB8C1FB52893002FD02B /* ViewController.swift in Sources */,
 				B41EBB8A1FB52893002FD02B /* AppDelegate.swift in Sources */,
 				B49C3AB81FBD56010072D003 /* loginViewController.swift in Sources */,
