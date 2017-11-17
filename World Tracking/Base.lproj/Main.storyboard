@@ -20,7 +20,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pXC-6f-4vM">
-                                <rect key="frame" x="0.0" y="0.0" width="299" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="277" height="667"/>
                             </arscnView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ODx-gB-hah">
                                 <rect key="frame" x="20" y="567" width="80" height="80"/>
@@ -36,7 +36,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SUu-Pq-oAs">
-                                <rect key="frame" x="120" y="567" width="80" height="80"/>
+                                <rect key="frame" x="120" y="567" width="37" height="80"/>
                                 <color key="backgroundColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="bBx-xD-YVC"/>
@@ -50,7 +50,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5WD-Wz-b1R">
-                                <rect key="frame" x="220" y="567" width="59" height="80"/>
+                                <rect key="frame" x="177" y="567" width="80" height="80"/>
                                 <color key="backgroundColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="d6B-ds-5Bu"/>
@@ -197,10 +197,10 @@
             </objects>
             <point key="canvasLocation" x="889" y="611"/>
         </scene>
-        <!--View Controller-->
+        <!--Modules View Controller-->
         <scene sceneID="JhU-Bs-s9U">
             <objects>
-                <viewController id="c0T-Wd-laF" sceneMemberID="viewController">
+                <viewController id="c0T-Wd-laF" customClass="modulesViewController" customModule="World_Tracking" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sxm-3l-ybU">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
