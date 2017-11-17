@@ -11,6 +11,7 @@ import UIKit
 class loginViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet var loginPage: UIView!
+    @IBOutlet weak var loginButton: UIButton!
     
     @IBOutlet weak var userNameInput: UITextField!
     @IBOutlet weak var passwordInput: UITextField!
@@ -29,6 +30,10 @@ class loginViewController: UIViewController, UITextFieldDelegate {
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
+    }
+    
+    @IBAction func loginButton(_ sender: Any) {
+        
     }
     
 

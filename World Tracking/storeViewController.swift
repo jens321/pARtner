@@ -9,6 +9,8 @@
 import UIKit
 
 class storeViewController: UIViewController {
+    @IBOutlet weak var scoreLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
